@@ -45,7 +45,7 @@ kubeadm join $RKE2_SERVER_IP:6443 --token $RKE2_TOKEN --discovery-token-ca-cert-
 
 # 7. Instalar o Calico
 Write-Host "Baixando e instalando o Calico..."
-Invoke-WebRequest -Uri "https://github.com/projectcalico/calico/releases/download/v3.24.1/calico-windows-v3.24.1.zip" -OutFile "$env:TEMP\calico-windows.zip"
+Invoke-WebRequest -Uri "https://github.com/projectcalico/calico/releases/download/v3.29.2/calico-windows-v3.29.2.zip" -OutFile "$env:TEMP\calico-windows.zip"
 Expand-Archive -Path "$env:TEMP\calico-windows.zip" -DestinationPath "C:\Calico"
 
 # 8. Configurar o Calico
